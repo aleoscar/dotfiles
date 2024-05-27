@@ -1,0 +1,36 @@
+format = '''
+$directory$git_branch$git_status$time$battery
+$character'''
+
+[character]
+success_symbol = '[❯](#61ed87)'
+error_symbol = '[❯](#eb2a3d)'
+
+[directory]
+truncation_length = 2
+style = 'bold #55e67b'
+
+[git_branch]
+style = 'bold #3587f2'
+
+[git_status]
+modified = 'M'
+style = 'bold #f75a45'
+
+[package]
+disabled = true
+
+[time]
+disabled = false
+style = '#ededed'
+format = '[$time]($style) '
+time_format = '%R'
+
+[battery]
+full_symbol = '🔋'
+charging_symbol = '⚡️'
+discharging_symbol = '󰁿'
+
+[[battery.display]]
+threshold = 100
+style = '#ededed'
