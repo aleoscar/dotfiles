@@ -1,5 +1,8 @@
 # .bashrc
 
+#starship
+eval "$(starship init bash)"
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -38,6 +41,3 @@ function open() {
 function vif() {
     nvim $(fzf)
 }
-
-#starship
-eval "$(starship init bash)"
