@@ -1,0 +1,38 @@
+{
+    "layer": "top",
+    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["network", "bluetooth", "wireplumber", "battery", "clock"],
+    //jag vill ha conditional grejs här som det finns i workspaces
+    //om class är tomt vill jag använda title t.ex
+    //för spotify, men kanske för annat
+    "hyprland/window": {
+        "format": "{title}",
+        "rewrite": {
+            "(.*)Mozilla Firefox": "Firefox"
+        },
+        "max-length": 50
+    },
+    "wireplumber": {
+        "format": "{volume}%  ",
+        "format-muted": ""
+    },
+    "network": {
+        "format": "{essid}",
+        "on-click": "iwgtk",
+    },
+    "battery": {
+        "format": "{capacity}% {icon} ",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "clock": {
+        "format-alt": "{:%a %d %b  %H:%M}"
+    },
+    "bluetooth": {
+        "format": " {status}",
+        "format-disabled": "󰂲", 
+        "format-connected": " {device_alias}",
+        "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+        "on-click": "blueman-manager",
+    },
+}
