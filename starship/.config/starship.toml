@@ -4,7 +4,8 @@ $character'''
 
 [character]
 success_symbol = '[❯](#61ed87)'
-error_symbol = '[❯](#eb2a3d)'
+# success_symbol = '[](#61ed87)'
+error_symbol = '[](#eb2a3d)'
 
 [directory]
 truncation_length = 2

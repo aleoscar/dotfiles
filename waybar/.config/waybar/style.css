@@ -36,6 +36,10 @@ tooltip label {
     padding: 0 10px;
 }
 
+#custom-poweroff, #custom-reboot, #custom-lock, #idle_inhibitor {
+    padding: 0 5px;
+}
+
 #clock {
     background-color: #64727D;
 }

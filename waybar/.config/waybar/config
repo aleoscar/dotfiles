@@ -2,7 +2,8 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["network", "bluetooth", "wireplumber", "battery", "clock"],
+    "modules-right": ["group/power", "network", "bluetooth", "wireplumber", "battery", "clock"],
+
     //jag vill ha conditional grejs här som det finns i workspaces
     //om class är tomt vill jag använda title t.ex
     //för spotify, men kanske för annat
@@ -13,26 +14,67 @@
         },
         "max-length": 50
     },
+
     "wireplumber": {
         "format": "{volume}%  ",
         "format-muted": ""
     },
+
     "network": {
-        "format": "{essid}",
+        "format": "󰖩",
+        "format-disconnected": "󰖪",
+        "tooltip-format": "{essid}",
         "on-click": "iwgtk",
     },
+
     "battery": {
         "format": "{capacity}% {icon} ",
         "format-icons": ["", "", "", "", ""]
     },
+
     "clock": {
         "format-alt": "{:%a %d %b  %H:%M}"
     },
+
     "bluetooth": {
-        "format": " {status}",
+        "format": "",
         "format-disabled": "󰂲", 
         "format-connected": " {device_alias}",
         "format-connected-battery": " {device_alias} {device_battery_percentage}%",
         "on-click": "blueman-manager",
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰒳",
+            "deactivated": "󰒲"
+        }
+    },
+
+    "custom/poweroff": {
+        "format": "󰐥",
+        "tooltip": false,
+        "on-click": "systemctl poweroff"
+    },
+
+    "custom/reboot": {
+        "format": "󰑓",
+        "tooltip": false,
+        "on-click": "systemctl reboot",
+    },
+
+    "custom/lock": {
+        "format": "󰌾",
+        "tooltip": false,
+        "on-click": "hyprlock",
+    },
+
+    "group/power": {
+        "orientation": "inherit",
+        "modules": ["custom/poweroff", "idle_inhibitor", "custom/lock", "custom/reboot"],
+        "drawer": {
+            "transition-left-to-right": false,
+        },
     },
 }
