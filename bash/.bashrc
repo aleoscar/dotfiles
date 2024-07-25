@@ -37,6 +37,7 @@ alias ls="eza --icons"
 alias la="eza -a --icons"
 alias ll="eza -l --icons --no-user --git"
 alias grep=rg
+alias neofetch=fastfetch
 
 # function open() {
 #     xdg-open $1 &> /dev/null
