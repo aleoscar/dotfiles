@@ -16,8 +16,8 @@
     },
 
     "wireplumber": {
-        "format": "{volume}%  ",
-        "format-muted": ""
+        "format": "",
+        "format-muted": " "
     },
 
     "network": {
