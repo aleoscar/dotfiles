@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["group/power", "network", "bluetooth", "wireplumber", "battery", "clock"],
+    "modules-right": ["group/power", "custom/updates", "network", "bluetooth", "wireplumber", "battery", "clock"],
 
     //jag vill ha conditional grejs här som det finns i workspaces
     //om class är tomt vill jag använda title t.ex
@@ -28,12 +28,21 @@
     },
 
     "battery": {
-        "format": "{capacity}% {icon} ",
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": "{icon}    {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
         "format-icons": ["", "", "", "", ""]
     },
 
     "clock": {
-        "format-alt": "{:%a %d %b  %H:%M}"
+        "format-alt": "{:L%a %d %b  %H:%M}",
+        "tooltip": false,
+        "locale": "sv_SE.UTF8"
     },
 
     "bluetooth": {
@@ -50,6 +59,15 @@
             "activated": "󰒳",
             "deactivated": "󰒲"
         }
+    },
+
+    "custom/updates": {
+        "exec": "checkupdates | wc -l",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "format": "󰣇  {}",
+        "interval": 15,
+        "tooltip": false,
+        "hide-empty-text": true,
     },
 
     "custom/poweroff": {
