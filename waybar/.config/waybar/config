@@ -92,10 +92,11 @@
     },
 
     "custom/music": {
-        "exec": "/home/sanej/.config/waybar/music.sh 2> /dev/null",
-        //kanske göra ett skript här som sparar en tmp fil för att detektera song byte med exec-if
+        "exec": "playerctl metadata --ignore-player=firefox --format '{{ title }} - {{ artist }}'",
+        // skulle vilja lösa det på något sätt så man slipper polla och det körs bara när sången byts
+        // Av någon anledning funkar det inte heller om texten innehåller "&"
         "format": "   {}",
-        "interval": 5,
+        "interval": 2,
         "tooltip": false,
         "hide-empty-text": true,
     },
