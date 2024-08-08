@@ -1,8 +1,25 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["group/power", "custom/updates", "network", "bluetooth", "wireplumber", "battery", "clock"],
+    "modules-left": ["custom/updates", "hyprland/window"],
+    "modules-center": ["hyprland/workspaces", "hyprland/mode"],
+    "modules-right": ["group/power", "network", "bluetooth", "wireplumber", "battery", "clock"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "active": "",
+            "default": "" 
+        },
+        "persistent-workspaces": {
+            "*": [ 1, 2, 3]
+        }
+    },
 
     //jag vill ha conditional grejs här som det finns i workspaces
     //om class är tomt vill jag använda title t.ex
