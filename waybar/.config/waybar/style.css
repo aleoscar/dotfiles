@@ -20,6 +20,8 @@ window#waybar.hidden {
 
 window#waybar.empty #window {
     background-color: transparent;
+    padding: 0 0px;
+    margin-left: 0px;
 }
 
 tooltip {
@@ -51,7 +53,7 @@ tooltip label {
 }
 
 #network, #custom-reboot, #custom-poweroff, #custom-lock,
-#idle_inhibitor, #mode, #clock, #window,
+#idle_inhibitor, #mode, #clock, #window, #custom-music,
 #wireplumber.muted, #bluetooth, #custom-updates {
 	margin-top: 6px;
 	margin-left: 6px;

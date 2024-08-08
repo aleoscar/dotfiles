@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "modules-left": ["custom/updates", "hyprland/window"],
+    "modules-left": ["custom/updates", "hyprland/window", "custom/music"],
     "modules-center": ["hyprland/workspaces", "hyprland/mode"],
     "modules-right": ["group/power", "network", "bluetooth", "wireplumber", "battery", "clock"],
 
@@ -25,11 +25,15 @@
     //om class är tomt vill jag använda title t.ex
     //för spotify, men kanske för annat
     "hyprland/window": {
-        "format": "{title}",
+        "format": "{initialTitle}",
         "rewrite": {
-            "(.*)Mozilla Firefox": "Firefox"
+            "(.*)Mozilla Firefox": "Firefox",
+            "Spotify(.*)": "Spotify",
+            "kitty": "Terminal"
         },
-        "max-length": 50
+        "max-length": 50,
+        "icon": true,
+        "icon-size": 16,
     },
 
     "wireplumber": {
@@ -83,6 +87,15 @@
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "format": "󰣇  {}",
         "interval": 15,
+        "tooltip": false,
+        "hide-empty-text": true,
+    },
+
+    "custom/music": {
+        "exec": "/home/sanej/.config/waybar/music.sh 2> /dev/null",
+        //kanske göra ett skript här som sparar en tmp fil för att detektera song byte med exec-if
+        "format": "   {}",
+        "interval": 5,
         "tooltip": false,
         "hide-empty-text": true,
     },
