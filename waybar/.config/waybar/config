@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "modules-left": ["custom/updates", "hyprland/window", "custom/music"],
+    "modules-left": ["custom/updates", "custom/mail", "hyprland/window", "custom/music"],
     "modules-center": ["hyprland/workspaces", "hyprland/mode"],
     "modules-right": ["group/power", "network", "bluetooth", "wireplumber", "battery", "clock"],
 
@@ -89,6 +89,15 @@
         "interval": 15,
         "tooltip": false,
         "hide-empty-text": true,
+    },
+
+    "custom/mail": {
+        "exec": "unread",
+        "format": "󰊫   {}",
+        "interval": 900,    // 15 mins
+        "tooltip": false,
+        "hide-empty-text": true,
+        "on-click": "xdg-open 'https://mail.google.com/mail/'",
     },
 
     "custom/music": {

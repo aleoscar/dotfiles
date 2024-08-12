@@ -54,7 +54,7 @@ tooltip label {
 
 #network, #custom-reboot, #custom-poweroff, #custom-lock,
 #idle_inhibitor, #mode, #clock, #window, #custom-music,
-#wireplumber.muted, #bluetooth, #custom-updates {
+#wireplumber.muted, #bluetooth, #custom-updates, #custom-mail {
 	margin-top: 6px;
 	margin-left: 6px;
 	padding-left: 10px;
