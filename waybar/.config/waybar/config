@@ -1,8 +1,13 @@
+/* vim: set filetype=jsonc : */
+
 {
     "layer": "top",
-    "modules-left": ["custom/updates", "custom/mail", "hyprland/window", "custom/music"],
+    "height": 30,
+    "spacing": 12,
+    "margin-top": 6,
+    "modules-left": ["group/power", "custom/updates", "custom/mail", "hyprland/window", "custom/music"],
     "modules-center": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-right": ["group/power", "network", "bluetooth", "wireplumber", "battery", "clock"],
+    "modules-right": ["network", "bluetooth", "wireplumber", "battery", "clock"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -15,7 +20,7 @@
         },
         "persistent-workspaces": {
             "*": [ 1, 2, 3]
-        }
+        },
     },
 
     //jag vill ha conditional grejs här som det finns i workspaces
@@ -28,9 +33,10 @@
             "Spotify(.*)": "Spotify",
             "kitty": "Terminal"
         },
-        "max-length": 50,
+        "max-length": 30,
         "icon": true,
         "icon-size": 16,
+        "hide-empty-text": true,
     },
 
     "wireplumber": {
@@ -48,7 +54,6 @@
     "battery": {
         "states": {
             "good": 95,
-            "warning": 30,
             "critical": 20
         },
         "format": "{icon}    {capacity}%",
@@ -127,9 +132,9 @@
 
     "group/power": {
         "orientation": "inherit",
-        "modules": ["custom/poweroff", "idle_inhibitor", "custom/lock", "custom/reboot"],
+        "modules": ["custom/poweroff", "custom/reboot", "custom/lock", "idle_inhibitor"],
         "drawer": {
-            "transition-left-to-right": false,
+            "transition-left-to-right": true,
         },
     },
 }

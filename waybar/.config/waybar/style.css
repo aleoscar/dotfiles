@@ -32,12 +32,17 @@ tooltip label {
     color: white;
 }
 
-.modules-center {
-    margin-top: 6px;
+.modules-left, .modules-center, .modules-right {
     margin-bottom: 0px;
-    padding: 0 10px;
-    border-radius: 15px;
+    padding-top: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    margin-right: 6px;
+    margin-left: 6px;
     background: @bg-color;
+	color: @text-color;
 }
 
 #workspaces button {
@@ -52,57 +57,48 @@ tooltip label {
     /* background: #CBA6F7; */
 }
 
-#network, #custom-reboot, #custom-poweroff, #custom-lock,
-#idle_inhibitor, #mode, #clock, #window, #custom-music,
-#wireplumber.muted, #bluetooth, #custom-updates, #custom-mail {
-	margin-top: 6px;
-	margin-left: 6px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
-	transition: none;
-	color: @text-color;
-	background: @bg-color;
+#network {
+	padding-right: 6px;
+	padding-left: 6px;
 }
 
-#idle_inhibitor, #custom-reboot, #custom-lock, #custom-poweroff {
-	margin-top: 0px;
+#custom-reboot, #custom-lock {
 	margin-left: 6px;
 	padding-left: 6px;
 	padding-right: 6px;
-	margin-bottom: 0px;
-    border-radius: 10px;
-	transition: none;
-	color: @text-color;
 }
 
-#power {
-	margin-top: 6px;
-	margin-left: 6px;
-	padding-left: 0px;
+#idle_inhibitor {
+	margin-left: 3px;
+	padding-left: 3px;
 	padding-right: 6px;
-	margin-bottom: 0px;
-	border-radius: 10px;
-	transition: none;
-	background: @bg-color;
+}
+
+#custom-poweroff {
+	margin-left: 6px;
+	padding-left: 6px;
+	padding-right: 2px;
+}
+
+#custom-reboot, #custom-poweroff {
+    font-size: 16; 
+}
+
+#window {
+    padding-right: 6px;
 }
 
 #clock {
-    background-color: @bg-color;
     margin-right: 6px;
 }
 
+#bluetooth {
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
 #battery {
-	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-bottom: 0px;
-	border-radius: 10px;
-	transition: none;
-	color: @text-color;
-	background: @bg-color;
+    margin-left: 0px;
 }
 
 #battery.charging, #battery.plugged {
