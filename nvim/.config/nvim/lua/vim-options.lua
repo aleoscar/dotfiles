@@ -18,10 +18,8 @@ vim.diagnostic.config({ signs = {
             [vim.diagnostic.severity.ERROR] = '',
             [vim.diagnostic.severity.WARN] = '',
         },
-        linehl = {
-            [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
-        },
         numhl = {
+            [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
             [vim.diagnostic.severity.WARN] = 'WarningMsg',
         },
     },
