@@ -12,3 +12,17 @@ vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', {})
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', {})
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', {})
 vim.keymap.set('n', '<leader>o', 'o<ESC>', {})
+
+vim.diagnostic.config({ signs = {
+        text = {
+            [vim.diagnostic.severity.ERROR] = '',
+            [vim.diagnostic.severity.WARN] = '',
+        },
+        linehl = {
+            [vim.diagnostic.severity.ERROR] = 'ErrorMsg',
+        },
+        numhl = {
+            [vim.diagnostic.severity.WARN] = 'WarningMsg',
+        },
+    },
+})
