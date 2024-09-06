@@ -96,7 +96,7 @@
     "custom/mail": {
         "exec": "unread",
         "format": "󰊫   {}",
-        "interval": 900,    // 15 mins
+        "interval": 300,    // 5 mins
         "tooltip": false,
         "hide-empty-text": true,
         "on-click": "xdg-open 'https://mail.google.com/mail/'",
