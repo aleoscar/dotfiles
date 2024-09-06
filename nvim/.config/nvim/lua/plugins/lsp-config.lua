@@ -12,7 +12,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "jdtls", "rust_analyzer", "jedi_language_server"}
+                ensure_installed = { "lua_ls", "jdtls", "rust_analyzer", "jedi_language_server", "clangd"}
             })
         end
     },
@@ -45,6 +45,10 @@ return {
             })
 
             lspconfig.jedi_language_server.setup({
+                capabilities = capabilities
+            })
+
+            lspconfig.clangd.setup({
                 capabilities = capabilities
             })
 
