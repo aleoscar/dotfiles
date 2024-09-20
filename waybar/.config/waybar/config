@@ -48,7 +48,6 @@
         "format": "󰖩",
         "format-disconnected": "󰖪",
         "tooltip-format": "{essid}",
-        "on-click": "iwgtk",
     },
 
     "battery": {
