@@ -1,0 +1,11 @@
+# colors
+include ~/.config/newsboat/dark
+
+browser firefox
+
+# key bindings
+bind-key j down
+bind-key k up
+bind-key u pageup
+bind-key d pagedown
+bind-key U show-urls
