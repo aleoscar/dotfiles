@@ -1,6 +1,8 @@
 # colors
 include ~/.config/newsboat/dark
 
+datetime-format "%b %d %Y"
+
 browser firefox
 
 # key bindings
