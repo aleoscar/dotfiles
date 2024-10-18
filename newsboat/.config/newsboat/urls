@@ -1,5 +1,8 @@
 https://archlinux.org/feeds/news/ linux
 https://hyprland.org/rss.xml linux
 http://www.svt.se/nyheter/rss.xml news
+https://www.lu.se/nyheter-och-press/rss "~Lunds Universitet" news lund
+https://www.lundagard.se/feed/ "~Lundagård" news lund
+https://www.lundagard.se/category/nyheter/studentliv/feed/ "~Lundagård - Studentliv" news lund
 #canvas https://canvas.education.lu.se/feeds/users/user_MgamYYvA2qw6GrTzMaOPdRUoVLNf5jAZJ80leM39.atom skola
 
