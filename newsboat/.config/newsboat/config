@@ -3,6 +3,9 @@ include ~/.config/newsboat/dark
 
 datetime-format "%b %d %Y"
 
+# max articles to cache
+max-items 1000
+
 browser firefox
 
 # key bindings

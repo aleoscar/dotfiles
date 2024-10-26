@@ -1,6 +1,6 @@
 # vim: filetype=neomuttrc
 # muttrc file for account alexander.oscar.jansson@gmail.com
-set realname = "alexander.oscar.jansson"
+set realname = "Alexander Jansson"
 set from = "alexander.oscar.jansson@gmail.com"
 set sendmail = "msmtp -a alexander.oscar.jansson@gmail.com"
 alias me alexander.oscar.jansson <alexander.oscar.jansson@gmail.com>
@@ -19,4 +19,4 @@ macro index o "<shell-escape>mw -y alexander.oscar.jansson@gmail.com<enter>" "ru
 macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a alexander.oscar.jansson@gmail.com<enter>"  "publish GPG key to WKS provider"
 macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a alexander.oscar.jansson@gmail.com<enter>" "confirm GPG publication"
 
-mailboxes "=INBOX" "=Personal" "=Receipts" "=Work" "=[Gmail]/All e-post" "=[Gmail]/Papperskorgen" "=[Gmail]/Skickat" "=[Gmail]/Skr&AOQ-ppost" "=[Gmail]/Stj&AOQ-rnm&AOQ-rkta" "=[Gmail]/Utkast" "=[Gmail]/Viktigt"
+mailboxes "=INBOX" "=[Gmail]/Papperskorgen" "=[Gmail]/Skickat" "=[Gmail]/Utkast" "=[Gmail]/Viktigt"
