@@ -19,4 +19,5 @@ macro index o "<shell-escape>mw -y alexander.oscar.jansson@gmail.com<enter>" "ru
 macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a alexander.oscar.jansson@gmail.com<enter>"  "publish GPG key to WKS provider"
 macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a alexander.oscar.jansson@gmail.com<enter>" "confirm GPG publication"
 
-mailboxes "=INBOX" "=[Gmail]/Papperskorgen" "=[Gmail]/Skickat" "=[Gmail]/Utkast" "=[Gmail]/Viktigt"
+mailboxes "=INBOX" "=[Gmail]/Papperskorgen" "=[Gmail]/Skickat" "=[Gmail]/Utkast" "=[Gmail]/Viktigt" 
+named-mailboxes All "=[Gmail]/All e-post"
