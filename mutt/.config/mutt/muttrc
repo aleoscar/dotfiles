@@ -2,3 +2,5 @@
 source /usr/share/mutt-wizard/mutt-wizard.muttrc
 source /home/sanej/.config/mutt/accounts/alexander.oscar.jansson@gmail.com.muttrc
 macro index,pager i1 '<sync-mailbox><enter-command>source /home/sanej/.config/mutt/accounts/alexander.oscar.jansson@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to alexander.oscar.jansson@gmail.com"
+macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
