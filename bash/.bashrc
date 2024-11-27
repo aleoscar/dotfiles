@@ -41,6 +41,7 @@ alias neofetch=fastfetch
 alias news=newsboat
 alias mail=neomutt
 alias tablet="systemctl --user enable opentabletdriver.service --now"
+alias open=xdg-open
 
 # function open() {
 #     xdg-open $1 &> /dev/null
