@@ -1,7 +1,7 @@
 https://www.lundagard.se/feed/ "~Lundagård" news lund
 https://www.lundagard.se/category/nyheter/studentliv/feed/ "~Lundagård - Studentliv" news lund
 https://www.lu.se/nyheter-och-press/rss "~Lunds Universitet" news lund
-http://www.svt.se/nyheter/rss.xml news
+#http://www.svt.se/nyheter/rss.xml news
 https://archlinux.org/feeds/news/ linux
 https://hyprland.org/rss.xml linux
 https://seniormars.com/rss.xml linux
