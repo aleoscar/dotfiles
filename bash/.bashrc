@@ -38,10 +38,16 @@ alias la="eza -a --icons"
 alias ll="eza -l --icons --no-user --git"
 alias grep=rg
 alias neofetch=fastfetch
-alias news=newsboat
+alias news="newsboat -q"
 alias mail=neomutt
 alias tablet="systemctl --user enable opentabletdriver.service --now"
 alias open=xdg-open
+
+mkcdir ()
+{
+    mkdir -p -- "$1" &&
+       cd -P -- "$1"
+}
 
 # function open() {
 #     xdg-open $1 &> /dev/null
