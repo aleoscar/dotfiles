@@ -12,6 +12,8 @@ vim.keymap.set('n', '<C-j>', ':wincmd j<CR>', {})
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', {})
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>', {})
 vim.keymap.set('n', '<leader>o', 'o<ESC>', {})
+vim.keymap.set('n', '<C-->', ':resize -1<CR>', {})
+vim.keymap.set('n', '<C-+>', ':resize +1<CR>', {})
 
 vim.diagnostic.config({ signs = {
         text = {

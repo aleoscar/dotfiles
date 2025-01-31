@@ -33,6 +33,7 @@
             "Spotify(.*)": "Spotify",
             "kitty": "Terminal",
             "(.*)Xournal(.*)": "Xournal++",
+            "(.*)Thunar(.*)": "Thunar",
         },
         "max-length": 30,
         "icon": true,
@@ -42,7 +43,8 @@
 
     "wireplumber": {
         "format": "",
-        "format-muted": " "
+        "format-muted": " ",
+        "hide-empty-text": true,
     },
 
     "network": {
