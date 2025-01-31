@@ -97,25 +97,6 @@ tooltip label {
     padding-right: 0px;
 }
 
-#battery {
-    margin-left: 0px;
-}
-
-#battery.charging, #battery.plugged {
-	color: #161320;
-    background-color: #A6E3A1;
-}
-
-#battery.critical:not(.charging) {
-    background-color: #F38BA8;
-    color: #161320;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
 @keyframes blink {
     to {
         background-color: #ffffff;

@@ -8,9 +8,6 @@ if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
-# Source nvm, dependency for mullvad-vpn
-source /usr/share/nvm/init-nvm.sh
-
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
@@ -35,7 +32,7 @@ unset rc
 alias vi=nvim
 alias ls="eza --icons"
 alias la="eza -a --icons"
-alias ll="eza -l --icons --no-user --git"
+alias ll="eza -l --icons --git"
 alias grep=rg
 alias neofetch=fastfetch
 alias news="newsboat -q"
