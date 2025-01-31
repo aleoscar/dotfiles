@@ -7,7 +7,7 @@
     "margin-top": 6,
     "modules-left": ["group/power", "custom/updates", "custom/mail", "hyprland/window", "custom/music"],
     "modules-center": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-right": ["network", "bluetooth", "wireplumber", "battery", "clock"],
+    "modules-right": ["network", "bluetooth", "wireplumber", "clock"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -53,17 +53,6 @@
         "tooltip-format": "{essid}",
     },
 
-    "battery": {
-        "states": {
-            "good": 95,
-            "critical": 20
-        },
-        "format": "{icon}    {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-icons": ["", "", "", "", ""]
-    },
-
     "clock": {
         "format-alt": "{:L%a %d %b  %H:%M}",
         "tooltip": false,
@@ -76,14 +65,6 @@
         "format-connected": " {device_alias}",
         "format-connected-battery": " {device_alias} {device_battery_percentage}%",
         "on-click": "blueman-manager",
-    },
-
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "󰒳",
-            "deactivated": "󰒲"
-        }
     },
 
     "custom/updates": {
@@ -134,7 +115,7 @@
 
     "group/power": {
         "orientation": "inherit",
-        "modules": ["custom/poweroff", "custom/reboot", "custom/lock", "idle_inhibitor"],
+        "modules": ["custom/poweroff", "custom/reboot", "custom/lock"],
         "drawer": {
             "transition-left-to-right": true,
         },

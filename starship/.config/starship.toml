@@ -28,12 +28,3 @@ disabled = false
 style = '#ededed'
 format = '[$time]($style) '
 time_format = '%R'
-
-[battery]
-full_symbol = '🔋'
-charging_symbol = '⚡️'
-discharging_symbol = '󰁿'
-
-[[battery.display]]
-threshold = 100
-style = '#ededed'
