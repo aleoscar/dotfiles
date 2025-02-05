@@ -6,7 +6,7 @@ return {
                 local gitsigns = require('gitsigns')
                 vim.keymap.set('n', '<leader>hs', gitsigns.stage_hunk, {desc = "stage hunk"})
                 vim.keymap.set('n', '<leader>hr', gitsigns.reset_hunk, {desc = "reset hunk"})
-                -- vim.keymap.set('n', '<leader>hn', gitsigns.nav_hunk('next', {}), {desc = "goto next hunk"})
+                vim.keymap.set('n', '<leader>hn', function() gitsigns.nav_hunk('next', {}) end, {desc = "goto next hunk"})
             end
         }
     end
