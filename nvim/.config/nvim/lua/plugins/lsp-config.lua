@@ -12,7 +12,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "jdtls", "rust_analyzer", "jedi_language_server", "clangd"}
+                ensure_installed = { "lua_ls", "jdtls", "rust_analyzer", "jedi_language_server", "clangd", "texlab"}
             })
         end
     },
@@ -51,6 +51,10 @@ return {
             })
 
             lspconfig.clangd.setup({
+                capabilities = capabilities
+            })
+
+            lspconfig.texlab.setup({
                 capabilities = capabilities
             })
 
