@@ -15,6 +15,7 @@ vim.keymap.set('n', '<leader>o', 'o<ESC>', {})
 vim.keymap.set('n', '<C-->', ':resize -1<CR>', {})
 vim.keymap.set('n', '<C-+>', ':resize +1<CR>', {})
 vim.keymap.set('n', '<leader>hi', ':noh<CR>', {})
+vim.keymap.set('n', '<leader>yf', 'ggVG\"+y<C-o>', {})
 
 vim.diagnostic.config({ signs = {
         text = {
