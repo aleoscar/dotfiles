@@ -86,11 +86,11 @@
     },
 
     "custom/music": {
-        "exec": "playerctl metadata --ignore-player=firefox --format '{{ title }} - {{ artist }}'",
-        // skulle vilja lösa det på något sätt så man slipper polla och det körs bara när sången byts
+        // "exec": "playerctl metadata --ignore-player=firefox --format '{{ title }} - {{ artist }}' --follow",
+        "exec": "stdbuf --output=L music-meta",
         // Av någon anledning funkar det inte heller om texten innehåller "&"
         "format": "   {}",
-        "interval": 2,
+        // "interval": once,
         "tooltip": false,
         "hide-empty-text": true,
     },
