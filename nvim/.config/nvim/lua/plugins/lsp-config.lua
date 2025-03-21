@@ -51,7 +51,11 @@ return {
             })
 
             lspconfig.clangd.setup({
-                capabilities = capabilities
+                capabilities = capabilities,
+                cmd = {
+                    "clangd",
+                    "--fallback-style=WebKit"
+                }
             })
 
             lspconfig.texlab.setup({
