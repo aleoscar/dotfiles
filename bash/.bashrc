@@ -28,6 +28,9 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+#Default flags
+export FZF_DEFAULT_OPTS="--reverse --height=40%  --pointer='->' --no-info --no-separator --color='pointer:blue,gutter:-1'"
+
 #aliases
 alias vi=nvim
 alias ls="eza --icons"
