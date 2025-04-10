@@ -54,7 +54,12 @@ mkcdir ()
 # }
 
 function vif() {
-    nvim $(fzf)
+    local file
+    file=$(fzf)
+
+    if [ $? -eq 0 ] && [ -n "$file" ]; then
+        nvim "$file"
+    fi
 }
 
 function y() {
