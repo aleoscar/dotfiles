@@ -1,4 +1,4 @@
-@import url("colors.css");
+@import url("mocha.css");
 
 #* {
     border: none;
@@ -41,23 +41,28 @@ tooltip label {
     border-radius: 10px;
     margin-right: 6px;
     margin-left: 6px;
-    background: @bg-color;
-	color: @text-color;
+    background: @base;
+	color: @text;
 }
 
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: @text-color;
+    color: @lavender;
     border-bottom: 3px solid transparent;
     padding-right: 9px;
 }
 
-#workspaces button.active {
-    /* background: #CBA6F7; */
-}
+#workspaces button.active {}
 
 #network {
+    color: @green;
+	padding-right: 6px;
+	padding-left: 6px;
+}
+
+#network.disconnected, #network.disabled {
+    color: @red;
 	padding-right: 6px;
 	padding-left: 6px;
 }
@@ -66,6 +71,10 @@ tooltip label {
 	margin-left: 6px;
 	padding-left: 6px;
 	padding-right: 6px;
+}
+
+#custom-lock {
+    color: @lavender;
 }
 
 #idle_inhibitor {
@@ -80,21 +89,35 @@ tooltip label {
 	padding-right: 2px;
 }
 
-#custom-reboot, #custom-poweroff {
+#custom-poweroff {
+    color: @maroon;
     font-size: 16; 
 }
 
+#custom-reboot {
+    color: @peach;
+}
+
+#custom-updates {
+    color: @sapphire;
+}
+
+#custom-music {
+    color: @teal;
+}
+
 #window {
-    padding-right: 6px;
+    color: @text;
+    padding-right: 0px;
 }
 
 #clock {
+    color: @text;
     margin-right: 6px;
 }
 
 #bluetooth {
-    margin-right: 0px;
-    padding-right: 0px;
+    color: @blue;
 }
 
 @keyframes blink {

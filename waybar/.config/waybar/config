@@ -41,22 +41,24 @@
         "hide-empty-text": true,
     },
 
-    "wireplumber": {
-        "format": "",
-        "format-muted": " ",
-        "hide-empty-text": true,
-    },
+    // "wireplumber": {
+    //     "format": "",
+    //     "format-muted": " ",
+    //     "hide-empty-text": true,
+    // },
 
     "network": {
         "format": "󰖩",
         "format-disconnected": "󰖪",
         "tooltip-format": "{essid}",
+        "on-click": "kitty nmtui"
     },
 
     "clock": {
-        "format-alt": "{:L%a %d %b  %H:%M}",
+        "format": "{:L%a %d %b  %H:%M}",
         "tooltip": false,
-        "locale": "sv_SE.UTF8"
+        "locale": "sv_SE.UTF8",
+        "on-click": "kitty calcurse"
     },
 
     "bluetooth": {
@@ -89,7 +91,7 @@
         // "exec": "playerctl metadata --ignore-player=firefox --format '{{ title }} - {{ artist }}' --follow",
         "exec": "stdbuf --output=L music-meta",
         // Av någon anledning funkar det inte heller om texten innehåller "&"
-        "format": "   {}",
+        "format": "   {}",
         // "interval": once,
         "tooltip": false,
         "hide-empty-text": true,
