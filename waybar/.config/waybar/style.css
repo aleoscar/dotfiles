@@ -78,6 +78,7 @@ tooltip label {
 }
 
 #idle_inhibitor {
+    color: @green;
 	margin-left: 3px;
 	padding-left: 3px;
 	padding-right: 6px;
@@ -102,6 +103,10 @@ tooltip label {
     color: @sapphire;
 }
 
+#custom-mail {
+    color: @mauve
+}
+
 #custom-music {
     color: @teal;
 }
@@ -121,12 +126,11 @@ tooltip label {
 }
 
 #battery {
-    margin-left: 0px;
+    color: @lavender;
 }
 
 #battery.charging, #battery.plugged {
-	color: #161320;
-    background-color: #A6E3A1;
+	color: @green;
 }
 
 #battery.critical:not(.charging) {

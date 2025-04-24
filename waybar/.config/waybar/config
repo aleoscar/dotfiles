@@ -7,7 +7,7 @@
     "margin-top": 6,
     "modules-left": ["group/power", "custom/updates", "custom/mail", "hyprland/window", "custom/music"],
     "modules-center": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-right": ["network", "bluetooth", "wireplumber", "battery", "clock"],
+    "modules-right": ["network", "bluetooth", "battery", "clock"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -59,7 +59,7 @@
             "good": 95,
             "critical": 20
         },
-        "format": "{icon}    {capacity}%",
+        "format": "{icon}   {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
         "format-icons": ["", "", "", "", ""]
@@ -99,7 +99,7 @@
 
     "custom/mail": {
         "exec": "unread",
-        "format": "󰊫   {}",
+        "format": "   {}",
         "interval": 300,    // 5 mins
         "tooltip": false,
         "hide-empty-text": true,
