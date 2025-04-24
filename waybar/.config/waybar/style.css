@@ -77,12 +77,6 @@ tooltip label {
     color: @lavender;
 }
 
-#idle_inhibitor {
-	margin-left: 3px;
-	padding-left: 3px;
-	padding-right: 6px;
-}
-
 #custom-poweroff {
 	margin-left: 6px;
 	padding-left: 6px;

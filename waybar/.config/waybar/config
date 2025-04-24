@@ -5,9 +5,9 @@
     "height": 30,
     "spacing": 12,
     "margin-top": 6,
-    "modules-left": ["group/power", "custom/updates", "custom/mail", "hyprland/window", "custom/music"],
+    "modules-left": ["group/power", "custom/updates", "hyprland/window", "custom/music"],
     "modules-center": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-right": ["network", "bluetooth", "wireplumber", "clock"],
+    "modules-right": ["network", "bluetooth", "clock"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -76,15 +76,6 @@
         "interval": 15,
         "tooltip": false,
         "hide-empty-text": true,
-    },
-
-    "custom/mail": {
-        "exec": "unread",
-        "format": "󰊫   {}",
-        "interval": 300,    // 5 mins
-        "tooltip": false,
-        "hide-empty-text": true,
-        "on-click": "xdg-open 'https://mail.google.com/mail/'",
     },
 
     "custom/music": {
