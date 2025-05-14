@@ -32,7 +32,7 @@ unset rc
 export FZF_DEFAULT_OPTS="--reverse --height=40%  --pointer='->' --no-info --no-separator --color='pointer:blue,gutter:-1'"
 
 #aliases
-alias vi=nvim
+alias v=nvim
 alias ls="eza --icons"
 alias la="eza -a --icons"
 alias ll="eza -l --icons --git"
