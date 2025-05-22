@@ -4,3 +4,5 @@ image_size = 32
 width = 40%
 height = 40%
 prompt = Search
+key_down=Ctrl-j
+key_up=Ctrl-k
