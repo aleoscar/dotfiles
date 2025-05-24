@@ -1,7 +1,25 @@
+use_nerdfont = true
+flip_status_indicators = true
+library_tabs = ["playlists", "browse", "podcasts"]
+
+[keybindings]
+"Esc" = "back"
+"Ctrl+d" = "move down 10"
+"Ctrl+u" = "move up 10"
+"g" = "move top"
+"Shift+g" = "move bottom"
+"Shift+s" = "focus search"
+"Shift+q" = "focus queue"
+"Shift+l" = "focus library"
+"p" = "playpause"
+"Space" = "queue"
+"s" = "add"
+
 [theme]
 background = "#1e1e2e"
 primary = "#cdd6f4"
-secondary = "#94e2d5"
+# secondary = "#94e2d5"
+secondary = "#cba6f7"
 title = "#cba6f7"
 playing = "#a6e3a1"
 playing_bg = "#1e1e2e"
