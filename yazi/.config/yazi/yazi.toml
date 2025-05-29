@@ -1,3 +1,13 @@
 [manager]
 ratio = [1, 3, 4]
 linemode = "size"
+
+[opener]
+xournal = [
+    { run = 'xournalpp "$@"', orphan = true, desc = "Xournal++"},
+]
+
+[open]
+prepend_rules = [
+	{ name = "*.xopp", use = "xournal" },
+]
