@@ -1,6 +1,7 @@
 use_nerdfont = true
 flip_status_indicators = true
 library_tabs = ["playlists", "browse", "podcasts"]
+volnorm = true
 
 [keybindings]
 "Esc" = "back"
