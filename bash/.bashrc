@@ -43,6 +43,11 @@ alias mail=neomutt
 alias tablet="systemctl --user enable opentabletdriver.service --now"
 alias open=xdg-open
 
+killps ()
+{
+    ps -eaf | fzf | awk '{print $2}' | xargs kill
+}
+
 mkcdir ()
 {
     mkdir -p -- "$1" &&
