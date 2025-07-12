@@ -9,8 +9,14 @@ max-items 1000
 browser firefox
 
 # key bindings
-bind-key j down
-bind-key k up
-bind-key u pageup
-bind-key d pagedown
-bind-key U show-urls
+bind j everywhere down
+bind k everywhere up
+bind u everywhere pageup
+bind d everywhere pagedown
+bind U article show-urls
+
+# podboat
+bind d podboat pb-download
+download-path "~/Music/podcasts"
+player "mpv"
+delete-played-files yes
