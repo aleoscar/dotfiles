@@ -114,6 +114,7 @@
         // "interval": once,
         "tooltip": false,
         "hide-empty-text": true,
+        "max-length": 40,
     },
 
     "custom/poweroff": {
