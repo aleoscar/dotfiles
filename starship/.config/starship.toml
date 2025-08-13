@@ -1,5 +1,5 @@
 format = '''
-$directory$git_branch$git_status
+$hostname$directory$git_branch$git_status
 $character'''
 
 [character]
@@ -19,6 +19,9 @@ style = 'bold #3587f2'
 [git_status]
 modified = 'M'
 style = 'bold #f75a45'
+
+[hostname]
+format = '[$hostname](bold red) '
 
 [package]
 disabled = true
