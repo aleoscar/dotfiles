@@ -109,12 +109,12 @@
     "custom/music": {
         // "exec": "playerctl metadata --ignore-player=firefox --format '{{ title }} - {{ artist }}' --follow",
         "exec": "stdbuf --output=L music-meta",
-        // Av någon anledning funkar det inte heller om texten innehåller "&"
         "format": "   {}",
         // "interval": once,
         "tooltip": false,
         "hide-empty-text": true,
         "max-length": 40,
+        "escape": true,
     },
 
     "custom/poweroff": {
