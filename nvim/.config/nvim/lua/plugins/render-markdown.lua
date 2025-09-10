@@ -9,5 +9,6 @@ return {
             render_modes = {'n', 'c'},
             anti_conceal = { enabled = false },
         })
-    end
+    end,
+    enabled = false
 }
