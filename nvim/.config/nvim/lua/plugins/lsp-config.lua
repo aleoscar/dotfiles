@@ -12,7 +12,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "jdtls", "rust_analyzer", "jedi_language_server", "clangd", "texlab"}
+                ensure_installed = {}
             })
         end
     },
@@ -31,36 +31,36 @@ return {
             vim.keymap.set('n', '<leader>ge', vim.diagnostic.goto_next, {})
 
             -- lua setup 
-            lspconfig.lua_ls.setup({
-                capabilities = capabilities
-            })
+            -- lspconfig.lua_ls.setup({
+            --     capabilities = capabilities
+            -- })
 
             -- java setup
-            lspconfig.jdtls.setup({
-                capabilities = capabilities
-            })
+            -- lspconfig.jdtls.setup({
+            --     capabilities = capabilities
+            -- })
 
             -- rust setup
-            lspconfig.rust_analyzer.setup({
-                capabilities = capabilities
+            -- lspconfig.rust_analyzer.setup({
+            --     capabilities = capabilities
 
-            })
+            -- })
 
-            lspconfig.jedi_language_server.setup({
-                capabilities = capabilities
-            })
+            -- lspconfig.jedi_language_server.setup({
+            --     capabilities = capabilities
+            -- })
 
-            lspconfig.clangd.setup({
-                capabilities = capabilities,
-                cmd = {
-                    "clangd",
-                    "--fallback-style=WebKit"
-                }
-            })
+            -- lspconfig.clangd.setup({
+            --     capabilities = capabilities,
+            --     cmd = {
+            --         "clangd",
+            --         "--fallback-style=WebKit"
+            --     }
+            -- })
 
-            lspconfig.texlab.setup({
-                capabilities = capabilities
-            })
+            -- lspconfig.texlab.setup({
+            --     capabilities = capabilities
+            -- })
 
         end
     }
