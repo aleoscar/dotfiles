@@ -5,13 +5,8 @@
     "position": "bottom",
     "height": 30,
     "spacing": 12,
-    "margin-top": 6,
-    "modules-left": ["group/power", "custom/updates", "hyprland/window", "custom/music"],
-    "modules-center": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-right": ["network", "bluetooth", "clock"],
     "margin-top": 0,
     "modules-left": ["group/power", "custom/updates", "hyprland/workspaces", "hyprland/window", "custom/music"],
-    // "modules-center": ["hyprland/workspaces", "hyprland/mode"],
     "modules-right": ["network", "bluetooth", "clock"],
 
     "hyprland/workspaces": {
@@ -19,16 +14,6 @@
         "active-only": true,
         "show-special": true,
         "special-visible-only": true,
-        // "format-icons": {
-        //     "1": "",
-        //     "2": "",
-        //     "3": "",
-        //     "active": "",
-        //     "default": "" 
-        // },
-        // "persistent-workspaces": {
-        //     "*": [ 1, 2, 3]
-        // },
     },
 
     //jag vill ha conditional grejs här som det finns i workspaces
