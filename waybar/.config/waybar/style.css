@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background: transparent;
+    background: @mantle;
     color: white;
 }
 
@@ -32,7 +32,7 @@ tooltip label {
     color: white;
 }
 
-.modules-left, .modules-center, .modules-right {
+.modules-left, .modules-right {
     margin-bottom: 0px;
     padding-top: 2px;
     padding-left: 6px;
@@ -45,15 +45,22 @@ tooltip label {
 	color: @text;
 }
 
-#workspaces button {
-    padding: 0 5px;
-    background: transparent;
-    color: @lavender;
-    border-bottom: 3px solid transparent;
-    padding-right: 9px;
-}
+/* #workspaces button { */
+/*     padding: 0 5px; */
+/*     background: transparent; */
+/*     color: @lavender; */
+/*     border-bottom: 3px solid transparent; */
+/*     padding-right: 9px; */
+/* } */
 
-#workspaces button.active {}
+#workspaces button {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background: @base;
+	color: @peach;
+}
 
 #network {
     color: @green;
