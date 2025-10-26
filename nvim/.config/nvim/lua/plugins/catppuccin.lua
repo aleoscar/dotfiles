@@ -6,7 +6,8 @@ return {
     config = function()
         local config = require("catppuccin")
         config.setup({
-            no_italic = true
+            no_italic = true,
+            transparent_background = true,
         })
         vim.cmd.colorscheme "catppuccin"
     end
