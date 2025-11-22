@@ -3,6 +3,8 @@
 #starship
 eval "$(starship init bash)"
 
+eval "$(fzf --bash)"
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
