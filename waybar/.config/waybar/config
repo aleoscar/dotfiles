@@ -67,7 +67,19 @@
 
     "clock": {
         "format": "{:L%a %e %b  %H:%M}",
-        "tooltip": false,
+        "tooltip": true,
+        "tooltip-format": "<tt><span size='13500'>{calendar}</span></tt>",
+        "calendar": {
+                    "mode"          : "month",
+                    "weeks-pos"     : "right",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today": "<span background='#ff6699' foreground='#1e1e2e'><b>{}</b></span>"
+                              }
+                    },
         "locale": "sv_SE.UTF8",
         "on-click": "kitty calcurse"
     },
