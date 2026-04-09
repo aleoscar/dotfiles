@@ -6,7 +6,7 @@
     "height": 30,
     "spacing": 12,
     "margin-top": 0,
-    "modules-left": ["group/power", "custom/updates", "hyprland/workspaces", "hyprland/window", "custom/music"],
+    "modules-left": ["group/power", "custom/updates", "hyprland/workspaces", "custom/music", "custom/fcitx5", "hyprland/window"],
     "modules-right": ["network", "bluetooth", "clock"],
 
     "hyprland/workspaces": {
@@ -110,6 +110,11 @@
         "format": "󰌾",
         "tooltip": false,
         "on-click": "hyprlock",
+    },
+
+    "custom/fcitx5": {
+        "exec": "input-fcitx5",
+        "signal": 5
     },
 
     "group/power": {
