@@ -68,6 +68,12 @@ tooltip label {
 	padding-left: 6px;
 }
 
+#custom-fcitx5 {
+    color: @green;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
 #network.disconnected, #network.disabled {
     color: @red;
 	padding-right: 6px;

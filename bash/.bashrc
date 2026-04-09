@@ -5,6 +5,8 @@ eval "$(starship init bash)"
 
 eval "$(fzf --bash)"
 
+eval "$(zoxide init bash --cmd cd)"
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
