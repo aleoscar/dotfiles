@@ -4,10 +4,9 @@
     "layer": "top",
     "height": 30,
     "spacing": 12,
-    "margin-top": 6,
-    "modules-left": ["group/power", "custom/updates", "custom/mail", "hyprland/window", "custom/music"],
-    "modules-center": ["hyprland/workspaces", "hyprland/mode"],
-    "modules-right": ["network", "bluetooth", "wireplumber", "battery", "clock"],
+    "margin-top": 0,
+    "modules-left": ["group/power", "custom/updates", "hyprland/workspaces", "custom/music", "custom/fcitx5", "hyprland/window"],
+    "modules-right": ["network", "bluetooth", "clock"],
 
     "hyprland/workspaces": {
         "format": "{icon}",
@@ -145,6 +144,11 @@
         "format": "󰌾",
         "tooltip": false,
         "on-click": "hyprlock",
+    },
+
+    "custom/fcitx5": {
+        "exec": "input-fcitx5",
+        "signal": 5
     },
 
     "group/power": {
