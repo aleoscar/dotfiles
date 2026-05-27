@@ -11,3 +11,5 @@ xournal = [
 prepend_rules = [
 	{ name = "*.xopp", use = "xournal" },
 ]
+	{ url = "*.xopp", use = "xournal" },
+]
