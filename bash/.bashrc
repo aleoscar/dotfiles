@@ -46,6 +46,7 @@ alias news="newsboat -q"
 alias mail=neomutt
 alias tablet="systemctl --user enable opentabletdriver.service --now"
 alias open=xdg-open
+alias pacinfo="pacman -Qq | fzf --preview 'pacman -Qi {}' --bind 'enter:execute(pacman -Qil {} | less)'"
 
 killps ()
 {
