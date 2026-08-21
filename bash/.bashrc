@@ -37,9 +37,9 @@ export FZF_DEFAULT_OPTS="--reverse --height=40%  --pointer='->' --no-info --no-s
 
 #aliases
 alias vim=nvim
-alias ls="eza --icons"
-alias la="eza -a --icons"
-alias ll="eza -l --icons --git"
+alias ls="eza --icons auto"
+alias la="eza -a --icons auto"
+alias ll="eza -l --icons auto --git"
 alias grep=rg
 alias neofetch=fastfetch
 alias news="newsboat -q"
