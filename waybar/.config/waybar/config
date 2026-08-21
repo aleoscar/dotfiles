@@ -7,7 +7,7 @@
     "spacing": 12,
     "margin-top": 0,
     "modules-left": ["group/power", "custom/updates", "hyprland/workspaces", "custom/music", "custom/fcitx5", "hyprland/window"],
-    "modules-right": ["network", "bluetooth", "clock"],
+    "modules-right": ["custom/weather", "network", "bluetooth", "clock"],
 
     "hyprland/workspaces": {
         "format": "{name}",
@@ -44,7 +44,7 @@
         "format": "󰖩",
         "format-disconnected": "󰖪",
         "tooltip-format": "{essid}",
-        "on-click": "kitty nmtui"
+        "on-click": "kitty wlctl"
     },
 
     "clock": {
@@ -63,7 +63,6 @@
                               }
                     },
         "locale": "sv_SE.UTF8",
-        "on-click": "kitty calcurse"
     },
 
     "bluetooth": {
@@ -92,6 +91,14 @@
         "hide-empty-text": true,
         "max-length": 40,
         "escape": true,
+    },
+
+    "custom/weather": {
+        "exec": "weather lund",
+        "return-type": "json",
+        "format": "{text}",
+        "interval": "3600",
+        "tooltip": "true",
     },
 
     "custom/poweroff": {

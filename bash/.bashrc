@@ -37,15 +37,16 @@ export FZF_DEFAULT_OPTS="--reverse --height=40%  --pointer='->' --no-info --no-s
 
 #aliases
 alias vim=nvim
-alias ls="eza --icons"
-alias la="eza -a --icons"
-alias ll="eza -l --icons --git"
+alias ls="eza --icons auto"
+alias la="eza -a --icons auto"
+alias ll="eza -l --icons auto --git"
 alias grep=rg
 alias neofetch=fastfetch
 alias news="newsboat -q"
 alias mail=neomutt
 alias tablet="systemctl --user enable opentabletdriver.service --now"
 alias open=xdg-open
+alias pacinfo="pacman -Qq | fzf --preview 'pacman -Qi {}' --bind 'enter:execute(pacman -Qil {} | less)'"
 
 killps ()
 {

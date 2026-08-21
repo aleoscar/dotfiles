@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background: @mantle;
+    background: @base;
     color: white;
 }
 
@@ -58,7 +58,6 @@ tooltip label {
     padding-right: 0px;
     margin-right: 0px;
     margin-left: 0px;
-    background: @base;
 	color: @peach;
 }
 
