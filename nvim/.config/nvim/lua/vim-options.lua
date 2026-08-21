@@ -2,6 +2,7 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
+vim.cmd("set splitright")
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -16,6 +17,7 @@ vim.keymap.set('n', '<C-->', ':resize -1<CR>', {})
 vim.keymap.set('n', '<C-+>', ':resize +1<CR>', {})
 vim.keymap.set('n', '<leader>hi', ':noh<CR>', {})
 vim.keymap.set('n', '<leader>yf', 'ggVG\"+y<C-o>', {})
+vim.keymap.set('n', '<leader>vn', ':vert new<CR>', {})
 
 vim.diagnostic.config({ signs = {
         text = {
