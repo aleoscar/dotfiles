@@ -48,6 +48,11 @@ alias tablet="systemctl --user enable opentabletdriver.service --now"
 alias open=xdg-open
 alias pacinfo="pacman -Qq | fzf --preview 'pacman -Qi {}' --bind 'enter:execute(pacman -Qil {} | less)'"
 
+pinyin ()
+{
+    python3 ~/.local/bin/pinyin.py "$@" | tee >(wl-copy)
+}
+
 killps ()
 {
     ps -eaf | fzf | awk '{print $2}' | xargs kill
