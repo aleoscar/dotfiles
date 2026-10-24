@@ -42,10 +42,11 @@
     // },
 
     "network": {
-        "format": "󰖩",
+        "format": "󰖩    {bandwidthUpBits:M}Mb/s     {bandwidthDownBits:M}Mb/s",
         "format-disconnected": "󰖪",
         "tooltip-format": "{essid}",
-        "on-click": "kitty wlctl"
+        "on-click": "kitty wlctl",
+        "interval": 2,
     },
 
     "battery": {
@@ -69,7 +70,7 @@
                     "format": {
                               "months":     "<span color='#ffead3'><b>{}</b></span>",
                               "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{:%V}</b></span>",
                               "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
                               "today": "<span background='#ff6699' foreground='#1e1e2e'><b>{}</b></span>"
                               }
@@ -126,7 +127,7 @@
         "exec": "weather lund",
         "return-type": "json",
         "format": "{text}",
-        "interval": "3600",
+        "interval": 1800,
         "tooltip": "true",
     },
 
