@@ -41,10 +41,11 @@
     // },
 
     "network": {
-        "format": "󰖩",
+        "format": "󰖩    {bandwidthUpBits:M}Mb/s     {bandwidthDownBits:M}Mb/s",
         "format-disconnected": "󰖪",
         "tooltip-format": "{essid}",
-        "on-click": "kitty wlctl"
+        "on-click": "kitty wlctl",
+        "interval": 2,
     },
 
     "clock": {
