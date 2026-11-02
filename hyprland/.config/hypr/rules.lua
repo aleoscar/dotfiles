@@ -1,19 +1,35 @@
-hl.workspace_rule({
-	workspace = "special:term",
-	on_created_empty = Terminal,
-})
-
-hl.window_rule({
-	name = "special-term",
-	match = {
-		workspace = "special:term",
-		class = "kitty",
+local special_kitty = {
+	["special:term"] = {
+		"kitty",
+		{
+			float = true,
+			center = true,
+			dim_around = true,
+			size = { "(monitor_w*0.6)", "(monitor_h*0.6)" },
+		},
 	},
-	float = true,
-	center = true,
-	dim_around = true,
-	size = { "(monitor_w*0.6)", "(monitor_h*0.6)" },
-})
+}
+
+hl.on("workspace.created", function(ws)
+	if not ws.is_empty then
+		return
+	end
+
+	local program = special_kitty[ws.name]
+	if program == nil then
+		return
+	end
+
+	local cmd, rules = table.unpack(program)
+	-- shallow-copy the rules table so we can add the workspace to it
+	local rules2 = {}
+	for k, v in pairs(rules) do
+		rules2[k] = v
+	end
+	rules2.workspace = ws.name .. " silent"
+	-- run it!
+	hl.exec_cmd(cmd, rules2)
+end)
 
 hl.window_rule({
 	name = "browser",
